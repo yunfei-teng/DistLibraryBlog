@@ -1,0 +1,66 @@
+site_name: Direbuted Training Library
+site_author: 'Tolga Dimlioglu, Yunfei Teng'
+    
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+nav:
+  - 'Introduction': 'index.md'
+  - 'Tutorials': 
+    - 'Introduction': 'Tutorials/materials.md'
+    - 'Concurrency': 'Tutorials/concurrency.md'
+  - 'SDTL':
+    - 'Codes': 'SDTL/codes.md'
+    - 'ReadMe': 'SDTL/readme.md'
+  - 'ASDTL':
+    - 'Architecture': 'ASDTL/architecture.md'
+    - 'Commmunication': 'ASDTL/comm.md'
+  - 'Environment': 'machine.md'
+
+# Extensions
+# https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox
+
+# JavaScript
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
